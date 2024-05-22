@@ -1,0 +1,79 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_gora {
+  width: 95vw;
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+
+.home_o_systemie {
+  width: 200px;
+  height: 60px;
+  margin-right: 20px;
+  font-size: 36px;
+  background-color: #ffd074;
+  color: white;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.home_srodek {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.home_foto {
+  width: 60vw;
+  height: auto;
+  margin: 20px;
+}
+
+.home_napisy {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_tytul {
+  font-size: 86px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.home_podtytul {
+  font-size: 56px;
+  margin-top: 200px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.home_dol {
+  width: 95vw;
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+.home_start {
+  width: 200px;
+  height: 80px;
+  margin-right: 20px;
+  font-size: 56px;
+  background-color: #ffd074;
+  color: white;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
