@@ -1,0 +1,65 @@
+.uslugi_gora {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.samolot_foto {
+  width: 200px;
+  height: auto;
+}
+.uslugi_napis {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.uslugi_srodek {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 45vh;
+}
+
+.uslugi_przyciski {
+  width: 20vw;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 4vw;
+  border: none;
+}
+
+.uslugi_przyciski:hover {
+  background-color: grey;
+}
+
+.przyciski_wyglad {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd074;
+}
+
+.uslugi_podpis {
+  font-size: 26px;
+}
+
+.uslugi_obrazek {
+  width: 150px;
+  height: auto;
+}
+
+.uslugi_obrazek_2 {
+  width: auto;
+  height: 150px;
+}
