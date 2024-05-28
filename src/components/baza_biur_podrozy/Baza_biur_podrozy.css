@@ -1,0 +1,15 @@
+.tabela {
+  width: 60vw;
+  height: auto;
+}
+.baza_danych_1 {
+  display: flex;
+  flex-direction: row;
+}
+.przyciski_lewo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: pink;
+}

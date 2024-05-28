@@ -3,6 +3,7 @@ import samolot from "./samolot-lini-LOT.jpg";
 import "./Uslugi.css";
 import przycisk from "./mapa-removebg-preview.png";
 import przycisk_2 from "./drugi_obrazek-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 export default function Uslugi() {
   return (
@@ -42,16 +43,18 @@ export default function Uslugi() {
         </button>
       </div>
       <div className="uslugi_srodek">
-        <button className="uslugi_przyciski">
-          <div className="przyciski_wyglad">
-            <img
-              className="uslugi_obrazek_2"
-              src={przycisk_2}
-              alt="klik_2"
-            ></img>
-          </div>
-          <div className="uslugi_podpis">Baza danych</div>
-        </button>
+        <Link to="/baza_biur_podrozy">
+          <button className="uslugi_przyciski">
+            <div className="przyciski_wyglad">
+              <img
+                className="uslugi_obrazek_2"
+                src={przycisk_2}
+                alt="klik_2"
+              ></img>
+            </div>
+            <div className="uslugi_podpis">Baza danych</div>
+          </button>
+        </Link>
         <button className="uslugi_przyciski">
           <div className="przyciski_wyglad">
             <img
