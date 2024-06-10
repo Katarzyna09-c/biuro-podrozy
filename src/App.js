@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/home/Home";
 import Uslugi from "./components/uslugi/Uslugi";
 import Baza_biur_podrozy from "./components/baza_biur_podrozy/Baza_biur_podrozy";
+import Baza_hoteli from "./components/baza_biur_podrozy/Baza_hoteli";
 
 const Router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const Router = createBrowserRouter([
   {
     path: "/baza_biur_podrozy",
     element: <Baza_biur_podrozy />,
+  },
+  {
+    path: "/baza_hoteli",
+    element: <Baza_hoteli />,
   },
 ]);
 

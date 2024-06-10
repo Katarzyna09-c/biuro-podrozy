@@ -26,7 +26,7 @@ const rows = [
   },
 ];
 
-export default function Baza_biur_podrozy() {
+export default function Baza_hoteli() {
   return (
     <div className="baza_danych_1">
       <div className="baza_danych_tytul">Baza biur podróży</div>

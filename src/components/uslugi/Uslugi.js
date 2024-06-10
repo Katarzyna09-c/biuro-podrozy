@@ -55,16 +55,18 @@ export default function Uslugi() {
             <div className="uslugi_podpis">Baza danych</div>
           </button>
         </Link>
-        <button className="uslugi_przyciski">
-          <div className="przyciski_wyglad">
-            <img
-              className="uslugi_obrazek_2"
-              src={przycisk_2}
-              alt="klik_2"
-            ></img>
-          </div>
-          <div className="uslugi_podpis">Baza danych</div>
-        </button>
+        <Link to="/baza_hoteli">
+          <button className="uslugi_przyciski">
+            <div className="przyciski_wyglad">
+              <img
+                className="uslugi_obrazek_2"
+                src={przycisk_2}
+                alt="klik_2"
+              ></img>
+            </div>
+            <div className="uslugi_podpis">Baza danych</div>
+          </button>
+        </Link>
         <button className="uslugi_przyciski">
           <div className="przyciski_wyglad">
             <img
