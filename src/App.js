@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Uslugi from "./components/uslugi/Uslugi";
 import Baza_biur_podrozy from "./components/baza_biur_podrozy/Baza_biur_podrozy";
 import Baza_hoteli from "./components/baza_biur_podrozy/Baza_hoteli";
+import Baza_pracownikow from "./components/baza_biur_podrozy/Baza_pracownikow";
 
 const Router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const Router = createBrowserRouter([
   {
     path: "/baza_hoteli",
     element: <Baza_hoteli />,
+  },
+  {
+    path: "/baza_pracownikow",
+    element: <Baza_pracownikow />,
   },
 ]);
 

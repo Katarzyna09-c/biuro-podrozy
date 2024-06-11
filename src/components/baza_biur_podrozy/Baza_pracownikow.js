@@ -4,47 +4,51 @@ import "./Baza_biur_podrozy.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "nazwa_hotelu", headerName: "Nazwa hotelu", width: 130 },
-  { field: "miasto_hotelu", headerName: "Miasto hotelu", width: 130 },
-  { field: "liczba_pokoi", headerName: "Liczba pokoi", width: 130 },
+  { field: "imie_pracownika", headerName: "Imie pracownika", width: 130 },
+  {
+    field: "nazwisko_pracownika",
+    headerName: "Nazwisko pracownika",
+    width: 130,
+  },
+  { field: "miasto_pracownika", headerName: "Miasto pracownika", width: 130 },
   { field: "biuro", headerName: "Biuro", width: 130 },
 ];
 
 const rows = [
   {
     id: 1,
-    nazwa_hotelu: "Gromada",
-    miasto_hotelu: "Warszawa",
-    liczba_pokoi: 3500,
+    imie_pracownika: "Jan",
+    nazwisko_pracownika: "Kowalski",
+    miasto_pracownika: "Warszawa",
     biuro: "Itaka",
   },
   {
     id: 2,
-    nazwa_hotelu: "Novotel",
-    miasto_hotelu: "Koszalin",
-    liczba_pokoi: 500,
+    imie_pracownika: "Adam",
+    nazwisko_pracownika: "Nowak",
+    miasto_pracownika: "Szczecin",
     biuro: "Rainbow",
   },
   {
     id: 3,
-    nazwa_hotelu: "Warsovia",
-    miasto_hotelu: "Szczecin",
-    liczba_pokoi: 354540,
+    imie_pracownika: "Anna",
+    nazwisko_pracownika: "Jarosinska",
+    miasto_pracownika: "Gdynia",
     biuro: "Coral",
   },
   {
     id: 4,
-    nazwa_hotelu: "Mariot",
-    miasto_hotelu: "Koszalin",
-    liczba_pokoi: 3550,
+    imie_pracownika: "Aneta",
+    nazwisko_pracownika: "Kołacz",
+    miasto_pracownika: "Zakopane",
     biuro: "Klakier",
   },
 ];
 
-export default function Baza_hoteli() {
+export default function Baza_pracownikow() {
   return (
     <div className="baza_danych_1">
-      <div className="baza_danych_tytul">Baza hoteli</div>
+      <div className="baza_danych_tytul">Baza pracowników</div>
       <div className="baza_danych_srodek">
         <div className="tabela">
           <div style={{ height: "80vh", width: "100%" }}>
@@ -66,19 +70,19 @@ export default function Baza_hoteli() {
         </div>
         <div className="biura">
           <div className="biura_szczegoly">
-            nazwa hotelu
+            imie pracownika
             <input className="biura_szczegoly_input" id="1"></input>
           </div>
           <div className="biura_szczegoly">
-            miasto hotelu
+            nazwisko pracownika
             <input className="biura_szczegoly_input" id="1"></input>
           </div>
           <div className="biura_szczegoly">
-            liczba pokoi
+            miasto pracownika
             <input className="biura_szczegoly_input" id="2"></input>
           </div>
           <div className="biura_szczegoly">
-            biuro
+            biuro pracownika
             <input className="biura_szczegoly_input" id="3"></input>
           </div>
           <button className="dodawanie">Dodaj</button>
