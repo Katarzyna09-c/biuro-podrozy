@@ -21,36 +21,6 @@ export default function Uslugi() {
             <div className="uslugi_podpis">Mapa biur podróży</div>
           </button>
         </Link>
-        <Link to="/mapa">
-          <button className="uslugi_przyciski">
-            <div className="przyciski_wyglad">
-              <img className="uslugi_obrazek" src={przycisk} alt="klik"></img>
-            </div>
-            <div className="uslugi_podpis">Mapa pracowników biur podróży</div>
-          </button>
-        </Link>
-        <Link to="/mapa">
-          <button className="uslugi_przyciski">
-            <div className="przyciski_wyglad">
-              <img className="uslugi_obrazek" src={przycisk} alt="klik"></img>
-            </div>
-            <div className="uslugi_podpis">
-              Mapa hoteli współpracujących z danym biurem podróży
-            </div>
-          </button>
-        </Link>
-        <Link to="/mapa">
-          <button className="uslugi_przyciski">
-            <div className="przyciski_wyglad">
-              <img className="uslugi_obrazek" src={przycisk} alt="klik"></img>
-            </div>
-            <div className="uslugi_podpis">
-              Mapa pracowników określonego biura podróży
-            </div>
-          </button>
-        </Link>
-      </div>
-      <div className="uslugi_srodek">
         <Link to="/baza_biur_podrozy">
           <button className="uslugi_przyciski">
             <div className="przyciski_wyglad">
@@ -60,7 +30,7 @@ export default function Uslugi() {
                 alt="klik_2"
               ></img>
             </div>
-            <div className="uslugi_podpis">Baza danych</div>
+            <div className="uslugi_podpis">Baza danych biur podróży</div>
           </button>
         </Link>
         <Link to="/baza_hoteli">
@@ -72,7 +42,7 @@ export default function Uslugi() {
                 alt="klik_2"
               ></img>
             </div>
-            <div className="uslugi_podpis">Baza danych</div>
+            <div className="uslugi_podpis">Baza danych hoteli</div>
           </button>
         </Link>
         <Link to="/baza_pracownikow">
@@ -84,19 +54,9 @@ export default function Uslugi() {
                 alt="klik_2"
               ></img>
             </div>
-            <div className="uslugi_podpis">Baza danych</div>
+            <div className="uslugi_podpis">Baza danych pracownikow</div>
           </button>
         </Link>
-        <button className="uslugi_przyciski">
-          <div className="przyciski_wyglad">
-            <img
-              className="uslugi_obrazek_2"
-              src={przycisk_2}
-              alt="klik_2"
-            ></img>
-          </div>
-          <div className="uslugi_podpis">Baza danych</div>
-        </button>
       </div>
     </div>
   );

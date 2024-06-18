@@ -64,25 +64,6 @@ export default function Baza_hoteli() {
             <button className="edycja">Usuń</button>
           </div>
         </div>
-        <div className="biura">
-          <div className="biura_szczegoly">
-            nazwa hotelu
-            <input className="biura_szczegoly_input" id="1"></input>
-          </div>
-          <div className="biura_szczegoly">
-            miasto hotelu
-            <input className="biura_szczegoly_input" id="1"></input>
-          </div>
-          <div className="biura_szczegoly">
-            liczba pokoi
-            <input className="biura_szczegoly_input" id="2"></input>
-          </div>
-          <div className="biura_szczegoly">
-            biuro
-            <input className="biura_szczegoly_input" id="3"></input>
-          </div>
-          <button className="dodawanie">Dodaj</button>
-        </div>
       </div>
     </div>
   );

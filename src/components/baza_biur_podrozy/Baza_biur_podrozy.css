@@ -1,14 +1,17 @@
 .tabela {
-  width: 60vw;
+  width: 80vw;
   height: 80vh;
   margin-left: 20px;
 }
 .baza_danych_1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .baza_danych_srodek {
   display: flex;
+
   flex-direction: row;
 }
 .przyciski_lewo {
@@ -30,32 +33,5 @@
   width: 200px;
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
-}
-.biura {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 40vw;
-  font-weight: bold;
-  font-size: 30px;
-}
-.dodawanie {
-  margin-right: 20px;
-  background-color: #ffd074;
-  color: white;
-  height: 50px;
-  width: 200px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 20px;
-}
-.biura_szczegoly {
-  margin-bottom: 30px;
-}
-.biura_szczegoly_input {
-  height: 40px;
-  width: 300px;
   margin-left: 20px;
 }

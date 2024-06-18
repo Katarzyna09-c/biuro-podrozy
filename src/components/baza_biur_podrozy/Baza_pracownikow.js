@@ -68,25 +68,6 @@ export default function Baza_pracownikow() {
             <button className="edycja">Usuń</button>
           </div>
         </div>
-        <div className="biura">
-          <div className="biura_szczegoly">
-            imie pracownika
-            <input className="biura_szczegoly_input" id="1"></input>
-          </div>
-          <div className="biura_szczegoly">
-            nazwisko pracownika
-            <input className="biura_szczegoly_input" id="1"></input>
-          </div>
-          <div className="biura_szczegoly">
-            miasto pracownika
-            <input className="biura_szczegoly_input" id="2"></input>
-          </div>
-          <div className="biura_szczegoly">
-            biuro pracownika
-            <input className="biura_szczegoly_input" id="3"></input>
-          </div>
-          <button className="dodawanie">Dodaj</button>
-        </div>
       </div>
     </div>
   );

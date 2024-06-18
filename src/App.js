@@ -7,6 +7,7 @@ import Baza_biur_podrozy from "./components/baza_biur_podrozy/Baza_biur_podrozy"
 import Baza_hoteli from "./components/baza_biur_podrozy/Baza_hoteli";
 import Baza_pracownikow from "./components/baza_biur_podrozy/Baza_pracownikow";
 import Mapa from "./components/mapa/Mapa";
+import Kafelki_1 from "./components/Kafelki_1";
 
 const Router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const Router = createBrowserRouter([
   {
     path: "/mapa",
     element: <Mapa />,
+  },
+  {
+    path: "/kafelki1",
+    element: <Kafelki_1 />,
   },
 ]);
 

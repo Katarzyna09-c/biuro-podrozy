@@ -1,0 +1,14 @@
+.kafelek_gora {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 100vw;
+}
+.kafelek_tytul {
+  margin-right: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
