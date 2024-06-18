@@ -8,6 +8,8 @@ import Baza_hoteli from "./components/baza_biur_podrozy/Baza_hoteli";
 import Baza_pracownikow from "./components/baza_biur_podrozy/Baza_pracownikow";
 import Mapa from "./components/mapa/Mapa";
 import Kafelki_1 from "./components/Kafelki_1";
+import Kafelki_2 from "./components/Kafelki_2";
+import Kafelek_3 from "./components/Kafelek_3";
 
 const Router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const Router = createBrowserRouter([
   {
     path: "/kafelki1",
     element: <Kafelki_1 />,
+  },
+  {
+    path: "/kafelki2",
+    element: <Kafelki_2 />,
+  },
+  {
+    path: "/kafelek3",
+    element: <Kafelek_3 />,
   },
 ]);
 

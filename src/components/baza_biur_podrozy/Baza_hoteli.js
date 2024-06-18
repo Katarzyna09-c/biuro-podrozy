@@ -1,6 +1,9 @@
 import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import "./Baza_biur_podrozy.css";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -10,38 +13,30 @@ const columns = [
   { field: "biuro", headerName: "Biuro", width: 130 },
 ];
 
-const rows = [
-  {
-    id: 1,
-    nazwa_hotelu: "Gromada",
-    miasto_hotelu: "Warszawa",
-    liczba_pokoi: 3500,
-    biuro: "Itaka",
-  },
-  {
-    id: 2,
-    nazwa_hotelu: "Novotel",
-    miasto_hotelu: "Koszalin",
-    liczba_pokoi: 500,
-    biuro: "Rainbow",
-  },
-  {
-    id: 3,
-    nazwa_hotelu: "Warsovia",
-    miasto_hotelu: "Szczecin",
-    liczba_pokoi: 354540,
-    biuro: "Coral",
-  },
-  {
-    id: 4,
-    nazwa_hotelu: "Mariot",
-    miasto_hotelu: "Koszalin",
-    liczba_pokoi: 3550,
-    biuro: "Klakier",
-  },
-];
-
 export default function Baza_hoteli() {
+  const [rows, setRows] = React.useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3Ahotele_prge&maxFeatures=50&outputFormat=application%2Fjson"
+        );
+        const data = response.data.features.map((feature, index) => ({
+          id: index + 1,
+          nazwa_hotelu: feature.properties.nazwa_hotelu,
+          miasto_hotelu: feature.properties.miasto,
+          liczba_pokoi: feature.properties.liczba_pokoi,
+          biuro: feature.properties.biuro,
+        }));
+        setRows(data);
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    getData();
+  }, []);
   return (
     <div className="baza_danych_1">
       <div className="baza_danych_tytul">Baza hoteli</div>
@@ -57,11 +52,30 @@ export default function Baza_hoteli() {
                 },
               }}
               pageSizeOptions={[5, 10]}
+              disableColumnFilter
+              disableDensitySelector
+              disableColumnSelector
+              slots={{ toolbar: GridToolbar }}
+              slotProps={{
+                toolbar: {
+                  showQuickFilter: true,
+                  csvOptions: { disableToolbarButton: true },
+                  printOptions: { disableToolbarButton: true },
+                },
+              }}
             />
           </div>
           <div className="przyciski_lewo">
-            <button className="edycja">Edytuj</button>
-            <button className="edycja">Usuń</button>
+            {" "}
+            <Link to="/mapa">
+              <button className="edycja">Mapa</button>
+            </Link>
+            <Link to="/uslugi">
+              <button className="edycja">Usługi</button>
+            </Link>
+            <Link to="/kafelki2">
+              <button className="edycja">Tabela</button>
+            </Link>
           </div>
         </div>
       </div>
