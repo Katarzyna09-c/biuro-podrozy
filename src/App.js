@@ -10,6 +10,7 @@ import Mapa from "./components/mapa/Mapa";
 import Kafelki_1 from "./components/Kafelki_1";
 import Kafelki_2 from "./components/Kafelki_2";
 import Kafelek_3 from "./components/Kafelek_3";
+import System from "./components/System";
 
 const Router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const Router = createBrowserRouter([
   {
     path: "/kafelek3",
     element: <Kafelek_3 />,
+  },
+  {
+    path: "/system",
+    element: <System />,
   },
 ]);
 
