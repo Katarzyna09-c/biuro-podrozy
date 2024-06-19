@@ -5,15 +5,53 @@
   justify-content: center;
   height: 100vh; /* Dostosuj wysokość według potrzeb */
   text-align: left; /* Tekst wyrównany do lewej */
+  margin-left: 40px;
 }
 
 .image {
-  width: 40%; /* Dostosuj szerokość obrazka według potrzeb */
+  width: 200vw; /* Zwiększenie szerokości obrazka */
   height: auto;
-  margin-right: 20px; /* Margines po prawej stronie obrazka */
+  margin-right: 40px; /* Margines po prawej stronie obrazka */
+}
 
-  .text {
-    font-size: 20px;
-    max-width: 50%; /* Dostosuj szerokość tekstu według potrzeb */
-  }
+.text-container {
+  display: flex;
+  flex-direction: column; /* Ustawienie kierunku flexboxa na kolumnę */
+  justify-content: center;
+}
+
+.text-large {
+  font-size: 40px; /* Zwiększ rozmiar czcionki dla większego tekstu */
+  font-weight: bold; /* Można dodać pogrubienie dla wyróżnienia */
+  margin-bottom: 10px; /* Odstęp między dużym tekstem a mniejszym tekstem */
+  background-color: #ffd074;
+}
+
+.text {
+  font-size: 30px;
+  max-width: 50%; /* Dostosuj szerokość tekstu według potrzeb */
+  margin-bottom: 20px; /* Odstęp między tekstami */
+}
+.text-small {
+  font-size: 25px; /* Rozmiar czcionki dla mniejszego tekstu */
+  max-width: 50%; /* Dostosuj szerokość tekstu według potrzeb */
+  font-weight: bold;
+}
+
+.highlight {
+  color: #ffd074; /* Zmień na dowolny kolor, który chcesz użyć */
+}
+.text_web {
+  font-size: 20px; /* Rozmiar czcionki dla mniejszego tekstu */
+  max-width: 50%; /* Dostosuj szerokość tekstu według potrzeb */
+  font-weight: bold;
+  text-align: right;
+  margin-left: 700px;
+  margin-top: 80px;
+}
+.image_2 {
+  margin-left: 1000px;
+  width: 200px; /* Zwiększenie szerokości obrazka */
+  height: auto;
+  margin-top: -90px;
 }
