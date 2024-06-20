@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Mapa.css";
+import L from "leaflet";
+import ikona_2 from "./ikona_2.png";
 import {
   LayersControl,
   MapContainer,
@@ -15,6 +17,14 @@ var myStyle = {
   weight: 5,
   opacity: 1,
 };
+
+let DefaultIcon = L.icon({
+  iconUrl: ikona_2,
+  iconSize: [20, 32],
+  iconAnchor: [16, 32],
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 function Map() {
   const [biura, setbiura] = useState(null);

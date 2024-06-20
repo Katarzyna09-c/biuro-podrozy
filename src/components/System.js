@@ -2,7 +2,7 @@ import React from "react";
 import foto from "./system_2.png"; // Poprawna ścieżka do obrazu
 import "./System.css"; // Importowanie stylów
 import { Link } from "react-router-dom";
-import samolot from "./samolot-lini-LOT copy.jpg";
+import podroznik from "./podroznik.png";
 
 function TextWithImage() {
   return (
@@ -27,7 +27,7 @@ function TextWithImage() {
         <p className="text-small">
           Najlepszy biurem podróży na rok 2023 okazała się:{" "}
           <span className="highlight">ITAKA</span>
-          <img src={samolot} alt="Opis zdjęcia" className="image_2" />
+          <img src={podroznik} alt="Opis zdjęcia" className="podroznik" />
         </p>
 
         <p className="text_web">
