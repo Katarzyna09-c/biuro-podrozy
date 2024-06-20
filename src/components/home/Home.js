@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home_gora">
-        <button className="home_o_systemie">O systemie</button>
+        <Link to="/system">
+          <button className="home_o_systemie">O systemie</button>
+        </Link>
       </div>
       <div className="home_srodek">
         <img src={home_foto} alt="foto" className="home_foto"></img>
